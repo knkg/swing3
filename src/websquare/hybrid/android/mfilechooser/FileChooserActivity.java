@@ -54,8 +54,8 @@ public class FileChooserActivity extends ListActivity implements OnItemClickList
 
 		setContentView(main);
 
-	    //getActionBar().setDisplayHomeAsUpEnabled(true);
-	    //getActionBar().setHomeButtonEnabled(true);
+	    getActionBar().setDisplayHomeAsUpEnabled(true);
+	    getActionBar().setHomeButtonEnabled(true);
 		_context = this;
 		Bundle extras = getIntent().getExtras();
 		if (extras != null) {

@@ -58,7 +58,7 @@
             </intent-filter>
         </activity>
         <activity android:name="websquare.hybrid.android.mfilechooser.FileChooserActivity"
-            android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
+            android:theme="@android:style/Theme.Holo.Light"></activity>
 	    <receiver android:name="websquare.util.ProjectBroadcastReceiver" android:enabled="true">
 	      <intent-filter>
 	        <category android:name="android.intent.category.DEFAULT" />

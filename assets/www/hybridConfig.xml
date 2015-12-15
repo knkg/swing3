@@ -12,7 +12,7 @@
 	<customResourceURL>/hybridEngine/template_android.zip</customResourceURL>
 	<startPage>/index.html</startPage>
 	<!-- <wqStartPage>/SWING/mobile/workFrame1_1.xml</wqStartPage>-->
-	<wqStartPage>/video.html</wqStartPage>
+	<wqStartPage>/mfilechooser.html</wqStartPage>
 	<DTR>D</DTR>
 	<!-- Update Policy 설정 -->
 	<engineUpdatePolicy>YES</engineUpdatePolicy>
