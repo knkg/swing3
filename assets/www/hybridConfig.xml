@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hybrid>
+	<appid>SWING</appid>
+	<initialPatchNumber>0</initialPatchNumber>
+	<version>1.0.0</version>
+	<serverURL>http://swing.websquare.co.kr</serverURL>
+	<resourceURL></resourceURL> <!--/hybridResource/resource.jsp-->
+	<refreshURL>/hybridResource/refresh.jsp</refreshURL> 
+<!-- <securityURL>/hybridResource/security.jsp</securityURL> --><!-- 사용하지 않음 -->
+	<securityResourceURL></securityResourceURL> <!--/hybridResource/securityResource.jsp-->
+	<securityResourceTimer>60</securityResourceTimer>
+	<customResourceURL>/hybridEngine/template_android.zip</customResourceURL>
+	<startPage>/index.html</startPage>
+	<!-- <wqStartPage>/SWING/mobile/workFrame1_1.xml</wqStartPage>-->
+	<wqStartPage>/video.html</wqStartPage>
+	<DTR>D</DTR>
+	<!-- Update Policy 설정 -->
+	<engineUpdatePolicy>YES</engineUpdatePolicy>
+	<applicationUpdatePolicy>NO</applicationUpdatePolicy>
+	<refreshUpdatePolicy>YES</refreshUpdatePolicy>
+	<refreshUpdateType>timestamp</refreshUpdateType> <!-- timestamp, hash -->
+	<customResourcePolicy>YES</customResourcePolicy>
+	<securityPolicy>YES</securityPolicy>
+	<securityProgressType>none</securityProgressType> <!-- none, text, image -->
+	<directResourcePolicy>NO</directResourcePolicy>
+	<nativeUpdatePolicy>none</nativeUpdatePolicy> <!-- essential, option, none -->
+	<websquareSPAPolicy>NO</websquareSPAPolicy>
+	<!-- 0:모든 리소스 생성, 1:보안리소스 제외, 2:Android 3.0 하위버전인 경우만 생성 -->
+	<localUpdateRule>0</localUpdateRule>
+	<applicationUpdateRule>0</applicationUpdateRule>
+	<refreshUpdateRule>0</refreshUpdateRule>
+	<directory>
+		<wqDirectory>/websquare</wqDirectory>
+		<workingDirectory>/</workingDirectory>
+		<backupDirectory>/backup</backupDirectory>		
+	</directory>
+</hybrid>

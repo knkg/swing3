@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+        </xf:model>
+        <script type="javascript"><![CDATA[
+         ]]></script>
+    </head>
+    <body>
+    	<w2:textbox id="textbox1"
+    		style="position: absolute ;left: 20px;top: 44px;width:586px;height:117px;text-align:center;font-size:34px;"
+    		label="This is Test Page">
+    	</w2:textbox>
+    </body>
+</html>

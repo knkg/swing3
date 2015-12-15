@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+	 <meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+	 <title>WEBSQUARE HYBRID</title>
+	 <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+	 <script type="text/javascript">
+	 function MiscPlugin() { 
+	 } 
+	 MiscPlugin.prototype.getNativeAppInfo = function(win, fail) {
+	 	return cordova.exec(win, fail, "Misc", "getNativeAppInfo", []); 
+	 };
+	 MiscPlugin.prototype.goNativeAppNext = function(win, fail, type) {
+	 	return cordova.exec(win, fail, "Misc", "updateNativeApp", [type]); 
+	 };
+	 cordova.addConstructor(function() { 
+	 	if (!window.plugins) {
+	 		window.plugins = {};
+	 	}
+	 	if (!window.plugins.misc) {
+	 		window.plugins.misc = new MiscPlugin();
+	 	}
+	 });
+	 function onDeviceReady() {
+	 	window.plugins.misc.getNativeAppInfo(setAppInfo, onFail);
+	 }
+	 function setAppInfo(ret) {
+	 	var obj = JSON.parse(ret);
+	 	var title = obj.title;
+	 	var version = obj.version;
+	 	var date = obj.date;
+	 	var info = obj.info;
+	 	var type = obj.type;
+	 	document.getElementById("title").innerHTML = title;
+	 	document.getElementById("version").innerHTML = version;
+	 	document.getElementById("date").innerHTML = date;
+	 	document.getElementById("info").innerHTML = info;
+	 	if (type == "essential") {
+	 		document.getElementById("nextBtn").style.display = "none";
+	 		document.getElementById("updateBtn").style.float = "inherit";
+	 	}
+	 }
+	 function goUpdate() {
+	 	window.plugins.misc.goNativeAppNext(updateNativeApp, onFail, "update");
+	 }
+	 function goNext() {
+	 	window.plugins.misc.goNativeAppNext(updateNativeApp, onFail, "later");
+	 }
+	 function updateNativeApp() {
+	 }
+	 function onFail(str) {
+	 	console.log(str);
+	 }
+	 document.addEventListener("deviceready",onDeviceReady,false);	
+	 </script>
+	 <style type="text/css">
+		html,body{margin:0;padding:0; height:100%;}
+		p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,table,form,fieldset{margin:0;padding:0}
+		body,input,textarea,select,button,table{font-size:12px; font-family:Arial; color:#fff;}
+		caption,legend{display:none}
+		img{vertical-align:top}
+		img,fieldset{border:0}
+		ul,ol,dl,li,dd {list-style:none}
+		em,address{font-style:normal}
+		a{text-decoration:none}
+		a:hover,a:active,a:focus{text-decoration:none}
+		blockquote, q {quotes: none;}
+		blockquote:before, blockquote:after,
+		q:before, q:after {content: ''; content: none;}
+		table {border-collapse: collapse; border-spacing: 0; empty-cells:show}
+
+		/* Layout */
+		#Wrap {position:relative; width:100%; height:100%; background:url("bg.jpg") no-repeat center center; background-size:cover;}
+		.container_wrap {position:absolute; top:50%; left:0; right:0; margin-top:-170px;}
+		.main_txt {padding:0 0 0 0; text-align:center; display:block;}
+		.main_txt span {display:block; margin-top:10px; font-weight:bold; font-size:14px;}
+		.main_txt span:first-child {font-size:35px;  margin-top:0;}
+
+		.update_box {border:4px solid #e2e3e4; border-radius:10px; margin:50px 13% 20px;  background:#1f3c6e; text-align:center;
+		-webkit-box-shadow: 1px 1px 5px #16233c, -1px 2px 5px #16233c;
+		-moz-box-shadow: 1px 1px 5px #16233c,-1px 2px 5px #16233c;
+		box-shadow: 1px 1px 5px #16233c, -1px 2px 5px #16233c;
+		}
+		.box_header {height:32px; line-height:31px; font-weight:bold; font-size:14px; 
+		background: #445c87; /* Old browsers */
+		background: -moz-linear-gradient(top,  #445c87 0%, #385079 26%, #263d63 50%, #152a4d 75%, #071a3c 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#445c87), color-stop(26%,#385079), color-stop(50%,#263d63), color-stop(75%,#152a4d), color-stop(100%,#071a3c)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #445c87 0%,#385079 26%,#263d63 50%,#152a4d 75%,#071a3c 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #445c87 0%,#385079 26%,#263d63 50%,#152a4d 75%,#071a3c 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #445c87 0%,#385079 26%,#263d63 50%,#152a4d 75%,#071a3c 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #445c87 0%,#385079 26%,#263d63 50%,#152a4d 75%,#071a3c 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#445c87', endColorstr='#071a3c',GradientType=0 ); /* IE6-9 */
+		}
+		.box_container {padding:10px 0;}
+		.box_container .cont_txt_area {line-height:18px;}
+		.box_container .btn_area {padding:0 20px; overflow:hidden; margin-top:15px;}
+		.box_container .btn_area a {display:inline-block; height:30px; width:48.3%; line-height:30px; font-size:14px; font-weight:bold; color:#fff; float:right; border:1px solid #1e2a3e; border-radius:7px;
+		background: #6a6666; /* Old browsers */
+		background: -moz-linear-gradient(top,  #6a6666 0%, #605c5c 26%, #454343 50%, #323030 75%, #171616 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6a6666), color-stop(26%,#605c5c), color-stop(50%,#454343), color-stop(75%,#323030), color-stop(100%,#171616)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #6a6666 0%,#605c5c 26%,#454343 50%,#323030 75%,#171616 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #6a6666 0%,#605c5c 26%,#454343 50%,#323030 75%,#171616 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #6a6666 0%,#605c5c 26%,#454343 50%,#323030 75%,#171616 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #6a6666 0%,#605c5c 26%,#454343 50%,#323030 75%,#171616 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6a6666', endColorstr='#171616',GradientType=0 ); /* IE6-9 */
+		}
+		.box_container .btn_area a:first-child {float:left;
+		background: #1389fc; /* Old browsers */
+		background: -moz-linear-gradient(top,  #1389fc 0%, #117ce7 26%, #0d62ba 50%, #0a4e96 75%, #073871 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1389fc), color-stop(26%,#117ce7), color-stop(50%,#0d62ba), color-stop(75%,#0a4e96), color-stop(100%,#073871)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #1389fc 0%,#117ce7 26%,#0d62ba 50%,#0a4e96 75%,#073871 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #1389fc 0%,#117ce7 26%,#0d62ba 50%,#0a4e96 75%,#073871 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #1389fc 0%,#117ce7 26%,#0d62ba 50%,#0a4e96 75%,#073871 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #1389fc 0%,#117ce7 26%,#0d62ba 50%,#0a4e96 75%,#073871 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1389fc', endColorstr='#073871',GradientType=0 ); /* IE6-9 */
+		}
+
+		.bottom_txt {text-align:center; line-height:18px; padding:0 12%;}
+
+		/* common */
+		.txt {text-shadow: 0px 1px 2px #0b111d;}
+	</style>
+ </head>
+ <body>
+	<div id="Wrap" style="overflow-y:hidden;">
+		<div class="container_wrap">
+			<p class="main_txt">
+				<span class="txt">UPDATE GUIDE</span>
+				<span>A new version is available.</span>
+			</p>
+			<div class="update_box">
+				<div class="box_header txt" id="title"></div>
+				<div class="box_container">
+					<div class="cont_txt_area txt">
+						<p>Version : <span id="version"></span></p>
+						<p>Update Date : <span id="date"></span></p>
+					</div>
+					<div class="btn_area txt">
+						<a href="javascript:goUpdate();" id="updateBtn">UPDATE</a>
+						<a href="javascript:goNext();" id="nextBtn">LATER</a>
+					</div>
+				</div>
+			</div>
+			<p class="bottom_txt" id="info"></p>
+		</div>
+	</div>
+</body>
+</html>

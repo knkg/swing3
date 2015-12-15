@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="user-scalable=no, maximum-scale=1.0, width=device-width" />
+	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+	<script type="text/javascript">
+	function MiscPlugin() { 
+	} 
+	MiscPlugin.prototype.getServerList = function(win, fail) {
+		return cordova.exec(win, fail, "Misc", "getServerList", []); 
+	};
+	MiscPlugin.prototype.getStartPage = function(win, fail, configUrl) {
+		return cordova.exec(win, fail, "Misc", "getStartPage", [configUrl]); 
+	};
+	cordova.addConstructor(function() { 
+		if (!window.plugins) {
+			window.plugins = {};
+		}
+		if (!window.plugins.misc) {
+			window.plugins.misc = new MiscPlugin();
+		}
+	});
+	function onDeviceReady() {
+		window.plugins.misc.getServerList(setServerList, onFail);
+	}
+	function getStartPage() {
+		var check = true;
+		var obj = document.getElementsByName("serverList");
+		for (i=0; i < obj.length; i++) {
+			if (obj[i].checked) {
+				check = false;
+				window.plugins.misc.getStartPage(appStart, onFailStart, obj[i].value);
+			}
+		}
+		if (check) {
+			alert("사용할 hybridConfig를 선택해주세요");
+		}
+	}
+	function setServerList(str) {
+		var obj = document.getElementById("debugarea");
+		obj.innerHTML = str;
+	}
+	function onFail(str) {
+		window.plugins.misc.getStartPage(appStart, onFailStart, "hybridConfig.xml");
+	}
+	function appStart(str) {
+		location.href = str;
+	}
+	function onFailStart(str) {
+		alert(str);
+	}
+	document.addEventListener("deviceready",onDeviceReady,false);	
+	</script>
+	<style type="text/css">
+	/* base */
+	html,body{margin:0;padding:0;height:100%;}
+	p,table,form,fieldset{margin:0;padding:0}
+	img,fieldset{border:0}
+
+	/* css */
+	#inappframe {width:100%;height:100%;position:absolute;left:0px;right:0px;bottom:0px;
+	background:#333639 url("img_logo.gif") center center no-repeat;}
+
+	.btnare {margin-top:10%; overflow:hidden;font-size:15px;color:#9c9c9c;text-align:center;font-weight: bold;}
+
+	.content {margin-top:10%;margin-left:20px;margin-right:20px;font-size:14px;color:#9c9c9c;text-align:center;}
+	.adr {position:absolute;width:100%;bottom:50px;font-size:11px;color:#9c9c9c;text-align:center;}
+	/* button */
+	button {padding:0 15px; height:37px; color:#fff; font-weight:bold; text-shadow:1px 0px 1px #3b6c9f; box-shadow:1px 1px 3px #272a2c; border-radius:3px;cursor:pointer;
+		border-width:1px 1px 1px 1px;
+		border-style:solid;
+		border-color:#202023 #262e3a #202023 #202023;
+		background: #63abf2; /* Old browsers */
+		background: -moz-linear-gradient(top, #63abf2 0%, #5295dd 51%, #4686cf 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#63abf2), color-stop(51%,#5295dd), color-stop(100%,#4686cf)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #63abf2 0%,#5295dd 51%,#4686cf 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #63abf2 0%,#5295dd 51%,#4686cf 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #63abf2 0%,#5295dd 51%,#4686cf 100%); /* IE10+ */
+		background: linear-gradient(to bottom, #63abf2 0%,#5295dd 51%,#4686cf 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63abf2', endColorstr='#4686cf',GradientType=0 ); /* IE6-9 */}
+	@media only screen and (max-width:414px) {	
+	#inappframe {background-size:75% 12%;}}
+	</style>
+    </head>
+    <body>
+        <div id="inappframe">
+			<p class="content">이 페이지는 개발용 App을 위한<br/>hybridConfig 선택화면입니다.<br/><br/>운영 App빌드시(DTR옵션:R)에는<br/>본 페이지는 호출되지 않습니다.</p><br/><br/>
+        	<div class="btnare">
+        		<div id="debugarea" style="display:inline-block;text-align:left"/>
+        	</div>
+			<p class="adr">
+				<button onclick="getStartPage();">시작</button><br/><br/><br/>
+				copyright (c) Inswave System Co,. Ltd. All Right Reserved. E-mail: webmaster@inswave.com
+			</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<!--meta name="format-detection" content="telephone=no" /-->
+	<meta name="viewport" content="user-scalable=no, maximum-scale=1.0, width=device-width" />
+	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+	<script type="text/javascript" charset="utf-8" src="InAppUpdate.js"></script>
+	<script type="text/javascript" charset="utf-8" src="spin.js"></script>
+	<style type="text/css">
+	/* base */
+	html,body{margin:0;padding:0;height:100%;}
+	p,table,form,fieldset{margin:0;padding:0}
+	img,fieldset{border:0}
+	
+	.none {display:none;}
+
+	/* css */
+	#inappframe {width:100%;height:100%;position:absolute;left:0px;right:0px;bottom:0px;
+	background:#333639 url("img_logo.gif") center center no-repeat;}
+
+	.btnare {margin:15px 5px; overflow:hidden;}
+	.btnare .btn1,.btnare .btn2 {float:left;}
+	
+	.pro_box {position:absolute;left:20px;right:20px;bottom:40px;}
+	.pro_gp {
+		position:relative;
+	    width:100%;
+	    height:23px;
+		border-radius:5px 5px 5px 5px;
+		background: #8a8a8a; /* Old browsers */
+		background: -moz-linear-gradient(top, #8a8a8a 0%, #acacac 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8a8a8a), color-stop(100%,#acacac)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #8a8a8a 0%,#acacac 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #8a8a8a 0%,#acacac 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #8a8a8a 0%,#acacac 100%); /* IE10+ */
+		background: linear-gradient(to bottom, #8a8a8a 0%,#acacac 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8a8a8a', endColorstr='#acacac',GradientType=0 ); /* IE6-9 */
+	    overflow:hidden;}
+	.pro_gp .pro_bar {
+		position:relative;
+	    height:21px;
+		border-width:1px;
+		border-style:solid;
+		border-color:#6bcdff #656565 #000408 #79b8de;
+		border-radius:5px 5px 5px 5px;
+		background: #0168c6; /* Old browsers */
+		background: -moz-linear-gradient(bottom, #0168c6 0%, #29b5fd 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,#0168c6), color-stop(100%,#29b5fd)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(bottom, #0168c6 0%,#29b5fd 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(bottom, #0168c6 0%,#29b5fd 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(bottom, #0168c6 0%,#29b5fd 100%); /* IE10+ */
+		background: linear-gradient(to top, #0168c6 0%,#29b5fd 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0168c6', endColorstr='#29b5fd',GradientType=0 ); /* IE6-9 */}
+	.pro_gp .pro_bar .p_gp {width:100%;position:absolute;top:0px;height:23px;}
+	.pro_gp .pro_bar .p_txt {position:absolute;top:1px;right:5px;text-align:right;color:#fff;font-size:15px;font-weight:bold;}
+	.pro_box .adr {margin-top:15px;font-size:11px;color:#9c9c9c;text-align:center;}
+
+	/* button */
+	button {padding:0 15px; height:37px; color:#fff; font-weight:bold; text-shadow:1px 0px 1px #3b6c9f; box-shadow:1px 1px 3px #272a2c; border-radius:3px;cursor:pointer;
+		border-width:1px 1px 1px 1px;
+		border-style:solid;
+		border-color:#202023 #262e3a #202023 #202023;
+		background: #63abf2; /* Old browsers */
+		background: -moz-linear-gradient(top, #63abf2 0%, #5295dd 51%, #4686cf 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#63abf2), color-stop(51%,#5295dd), color-stop(100%,#4686cf)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #63abf2 0%,#5295dd 51%,#4686cf 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #63abf2 0%,#5295dd 51%,#4686cf 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #63abf2 0%,#5295dd 51%,#4686cf 100%); /* IE10+ */
+		background: linear-gradient(to bottom, #63abf2 0%,#5295dd 51%,#4686cf 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63abf2', endColorstr='#4686cf',GradientType=0 ); /* IE6-9 */}
+	button.btn_debug {float:right;
+		background: #deb00b; /* Old browsers */
+		background: -moz-linear-gradient(top, #deb00b 0%, #c38426 66%, #b97329 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#deb00b), color-stop(66%,#c38426), color-stop(100%,#b97329)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #deb00b 0%,#c38426 66%,#b97329 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #deb00b 0%,#c38426 66%,#b97329 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #deb00b 0%,#c38426 66%,#b97329 100%); /* IE10+ */
+		background: linear-gradient(to bottom, #deb00b 0%,#c38426 66%,#b97329 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#deb00b', endColorstr='#b97329',GradientType=0 ); /* IE6-9 */}
+
+	.notice_cont {
+		margin:20px 20px 0px;
+		font: normal .75em Nanum Gothic;
+		line-height: 18px;
+		}
+	.boardView {
+		position: relative;
+		width: 100%;
+		padding: 0px;
+		margin: 0px;
+		overflow: hidden;
+	}
+	.boardTitle {
+		padding:10px;
+		margin:0px;
+		border-top: 1px solid #898989;
+		border-bottom: 1px solid #bdbdbd;
+		background: #f7f7f7;
+	}
+	.boardcontent {
+		clear: both;
+		position: relative;
+		padding: 15px;
+		margin: 0px;
+		text-align: left;
+		border-bottom: 1px solid #898989;
+		line-height: 20px;
+	}
+	@media only screen and (max-width:414px) {	
+	#inappframe {background-size:75% 12%;}
+	</style>
+    </head>
+    <body>
+        <div id="noticeframe" class="none" style="position:absolute;top:0px;left:0px;right:0px;width:100%; height:100%; z-index:1000">
+            <div style="position:absolute;top:0px;left:0px;right:0;bottom:57px;overflow:auto;-webkit-overflow-scrolling:touch">
+	            <div id="cont" class="notice_cont">
+	            	<div id="viewGrp" class="boardView">
+	            		<div id="boardTitle" class="boardTitle">
+	            			<h3 id="noticeTitle" style="margin:0px;"></h3>
+	            		</div>
+	            		<div id="noticeContent" class="boardcontent"></div>
+					</div>
+	            </div>
+	            <iframe id="noticeIframe" width="100%" height="100%" style="border:none;display:none;" src=""></iframe>
+	        </div>
+	        <div style="position:absolute;bottom:0px;left:0px;right:0;width:100%;height:57px;">
+	        	<button id="noticeNext" type="button" onclick="nextNotice()" style="position:absolute;margin-top:10px;left:50%;margin-left:-26px;">Next</button>
+	        </div>
+      	</div>
+        <div id="inappframe" class="none">
+        	<div id="debugarea" class="btnare none">
+				<div id="errorfunctions" class="none btn2">
+					<button onclick="window.plugins.inappupdate.clean();">초기화</button>
+					<button id="button3" onclick="error_switch();onDeviceReady();">재시작</button>   
+					<button id="button2" onclick="window.plugins.inappupdate.launch();">건너뛰기</button>
+				</div>
+				<button id="debugbutton" class="btn_debug" onclick="debug_switch()">DebugMode</button>
+    	 	</div>
+			<div id="progressBox" class="pro_box">
+    	 		<div id="szlider" class="pro_gp">
+				    <div id="szliderbar" class="pro_bar" style="">	<!-- processing size -->
+						<div id="szazalek" class="p_gp">
+						<p class="p_txt" id="szazalek_txt"></p>
+						</div>
+				    </div>
+				</div>
+    	 		<div style="">
+    	 			<p id="progressStatus" style="margin:5px 0;color:#fff;font-size:14px;text-align:center;font-family:Nanum Gothic;height:20px;"></p>
+    	 		</div>
+    	 		<div id="progressMessage" style=""></div>
+				<p class="adr">copyright (c) Inswave System Co,. Ltd. All Right Reserved. E-mail: webmaster@inswave.com</p>
+    	 	</div>
+        </div>
+    </body>
+</html>
