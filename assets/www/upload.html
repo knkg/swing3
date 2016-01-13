@@ -18,7 +18,7 @@
             navigator.camera.getPicture(uploadPhoto, function(message) {
 			alert('get picture failed');
 		},{
-			quality: 50, 
+			quality: 50,
 			destinationType: navigator.camera.DestinationType.FILE_URI,
 			sourceType: navigator.camera.PictureSourceType.PHOTOLIBRARY
 		}
@@ -41,7 +41,7 @@
             options.chunkedMode = false;
  
             var ft = new FileTransfer();
-            ft.upload(imageURI, "http://yourdomain.com/upload.php", win, fail, options);
+            ft.upload(imageURI, "http://swing.websquare.co.kr/uploadFile", win, fail, options);
         }
  
         function win(r) {
@@ -54,8 +54,7 @@
         function fail(error) {
             alert("An error has occurred: Code = " + error.code);
         }
- 
-        </script>
+         </script>
 </head>
 <body>
     <button onclick="getImage();">Upload a Photo</button>

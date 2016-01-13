@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/welcome_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/signature_margin"
+        android:layout_marginRight="@dimen/signature_margin"
+        android:layout_marginTop="@dimen/signature_anotation_margin"
+        android:text="welcome_username" />
+
+    <TextView
+        android:id="@+id/phrase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/signature_phrase_margin"
+        android:layout_marginRight="@dimen/signature_phrase_margin"
+        android:layout_marginTop="@dimen/signature_anotation_margin" />
+
+    <websquare.hybrid.android.signature.SignatureEditor
+        android:id="@+id/signature"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/signature_height"
+        android:layout_marginLeft="@dimen/signature_margin"
+        android:layout_marginRight="@dimen/signature_margin"
+        android:layout_marginTop="@dimen/signature_anotation_margin"
+        android:background="@drawable/border_with_ghosted_text" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/signature_anotation_margin"
+        android:background="@drawable/btn_selector"
+        android:paddingLeft="@dimen/signature_btn_padding"
+        android:paddingRight="@dimen/signature_btn_padding"
+        android:text="@string/signature_clear" />
+
+  
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/signature_anotation_margin"
+            android:background="@drawable/btn_selector"
+            android:paddingLeft="@dimen/signature_btn_padding"
+            android:paddingRight="@dimen/signature_btn_padding"
+            android:text="save" />
+ 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/signature_image_divider"
+        android:background="@drawable/divider_feed_text" />
+
+</LinearLayout>

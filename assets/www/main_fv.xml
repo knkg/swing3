@@ -1,0 +1,1025 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><?xml-stylesheet href="../common/css/all.css" type="text/css"?>
+<?xml-stylesheet href="../common/css/contents.css" type="text/css"?>
+<?xml-stylesheet href="../common/css/widget.css" type="text/css"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+    	<w2:buildDate/>
+    	<xf:model>
+    		<xf:instance>
+    			<data xmlns=""/>
+    		</xf:instance>
+    		<w2:dataCollection baseNode="map">
+    			<w2:dataList baseNode="list" id="dlt_MenuList" repeatNode="map" saveRemovedData="true">
+    				<w2:columnInfo>
+    					<w2:column dataType="text" id="menuCd" name="메뉴코드" />
+    					<w2:column dataType="text" id="menuNm" name="메뉴명" />
+    					<w2:column dataType="text" id="depth" name="레벨" />
+    					<w2:column dataType="text" id="pageUrl" name="페이지" />
+    					<w2:column dataType="text" id="parentMenu" name="최상위부모메뉴" />
+    					<w2:column dataType="text" id="col6" name="name6" />
+    				</w2:columnInfo>
+    				<w2:data use="true">
+    					<w2:row>
+    						<menuCd><![CDATA[CST]]></menuCd>
+    						<menuNm><![CDATA[고객상담]]></menuNm>
+    						<depth><![CDATA[1]]></depth>
+    						<pageUrl />
+    						<parentMenu />
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[CST_A]]></menuCd>
+    						<menuNm><![CDATA[고객상담메인]]></menuNm>
+    						<depth><![CDATA[2]]></depth>
+    						<parentMenu><![CDATA[CST]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[CST_A_01]]></menuCd>
+    						<menuNm><![CDATA[고객상담]]></menuNm>
+    						<depth><![CDATA[3]]></depth>
+    						<pageUrl><![CDATA[sample_01.xml]]></pageUrl>
+    						<parentMenu><![CDATA[CST_A]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[CST_A_02]]></menuCd>
+    						<menuNm><![CDATA[고객상담(확장형)]]></menuNm>
+    						<depth><![CDATA[3]]></depth>
+    						<pageUrl><![CDATA[sample_02.xml]]></pageUrl>
+    						<parentMenu><![CDATA[CST_A]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[CST_A_03]]></menuCd>
+    						<menuNm><![CDATA[신규 가입(확장형)]]></menuNm>
+    						<depth><![CDATA[3]]></depth>
+    						<pageUrl><![CDATA[sample_03.xml]]></pageUrl>
+    						<parentMenu><![CDATA[CST_A]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[CST_A_03S]]></menuCd>
+    						<menuNm><![CDATA[신규 가입]]></menuNm>
+    						<depth><![CDATA[3]]></depth>
+    						<pageUrl><![CDATA[sample_03_1027S.xml]]></pageUrl>
+    						<parentMenu><![CDATA[CST_A]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[CST_A_04]]></menuCd>
+    						<menuNm><![CDATA[개통결과]]></menuNm>
+    						<depth><![CDATA[3]]></depth>
+    						<pageUrl><![CDATA[sample_05.xml]]></pageUrl>
+    						<parentMenu><![CDATA[CST_A]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[BIL]]></menuCd>
+    						<menuNm><![CDATA[요금]]></menuNm>
+    						<depth><![CDATA[1]]></depth>
+    						<pageUrl />
+    						<parentMenu />
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[BIL_A]]></menuCd>
+    						<menuNm><![CDATA[이동전화 요금제]]></menuNm>
+    						<depth><![CDATA[2]]></depth>
+    						<pageUrl />
+    						<parentMenu><![CDATA[BIL]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[BIL_A_01]]></menuCd>
+    						<menuNm><![CDATA[요금제 추천]]></menuNm>
+    						<depth><![CDATA[3]]></depth>
+    						<pageUrl><![CDATA[sample_04.xml]]></pageUrl>
+    						<parentMenu><![CDATA[BIL_A]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[BIL_A_02]]></menuCd>
+    						<menuNm><![CDATA[콘텐츠이용료/소액결제 선결제]]></menuNm>
+    						<depth><![CDATA[3]]></depth>
+    						<pageUrl />
+    						<parentMenu><![CDATA[BIL_A]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[BIL_A_03]]></menuCd>
+    						<menuNm><![CDATA[즉시납부]]></menuNm>
+    						<depth><![CDATA[3]]></depth>
+    						<pageUrl />
+    						<parentMenu><![CDATA[BIL_A]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[BIL_A_04]]></menuCd>
+    						<menuNm><![CDATA[납부내역]]></menuNm>
+    						<depth><![CDATA[3]]></depth>
+    						<pageUrl />
+    						<parentMenu><![CDATA[BIL_A]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[BIL_B]]></menuCd>
+    						<menuNm><![CDATA[인터넷/전화/TV]]></menuNm>
+    						<depth><![CDATA[2]]></depth>
+    						<pageUrl />
+    						<parentMenu><![CDATA[BIL]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[BIL_B_01]]></menuCd>
+    						<menuNm><![CDATA[사용/청구요금]]></menuNm>
+    						<depth><![CDATA[3]]></depth>
+    						<pageUrl />
+    						<parentMenu><![CDATA[BIL_B]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[BIL_B_02]]></menuCd>
+    						<menuNm><![CDATA[즉시납부]]></menuNm>
+    						<depth><![CDATA[3]]></depth>
+    						<pageUrl />
+    						<parentMenu><![CDATA[BIL_B]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[BIL_B_03]]></menuCd>
+    						<menuNm><![CDATA[납부내역]]></menuNm>
+    						<depth><![CDATA[3]]></depth>
+    						<pageUrl />
+    						<parentMenu><![CDATA[BIL_B]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[BIL_C]]></menuCd>
+    						<menuNm><![CDATA[세금계산서재발행]]></menuNm>
+    						<depth><![CDATA[2]]></depth>
+    						<pageUrl />
+    						<parentMenu><![CDATA[BIL]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[SVC]]></menuCd>
+    						<menuNm><![CDATA[이용안내]]></menuNm>
+    						<depth><![CDATA[1]]></depth>
+    						<pageUrl />
+    						<parentMenu />
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[SVC_A]]></menuCd>
+    						<menuNm><![CDATA[휴대폰]]></menuNm>
+    						<depth><![CDATA[2]]></depth>
+    						<pageUrl />
+    						<parentMenu><![CDATA[SVC]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[SVC_B]]></menuCd>
+    						<menuNm><![CDATA[요금제]]></menuNm>
+    						<depth><![CDATA[2]]></depth>
+    						<pageUrl />
+    						<parentMenu><![CDATA[SVC]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[SVC_C]]></menuCd>
+    						<menuNm><![CDATA[부가서비스]]></menuNm>
+    						<depth><![CDATA[2]]></depth>
+    						<pageUrl />
+    						<parentMenu><![CDATA[SVC]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[SVC_D]]></menuCd>
+    						<menuNm><![CDATA[가입/변경/해지]]></menuNm>
+    						<depth><![CDATA[2]]></depth>
+    						<pageUrl />
+    						<parentMenu><![CDATA[SVC]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[SVC_E]]></menuCd>
+    						<menuNm><![CDATA[요금조회/납부]]></menuNm>
+    						<depth><![CDATA[2]]></depth>
+    						<pageUrl />
+    						<parentMenu><![CDATA[SVC]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[SVC_F]]></menuCd>
+    						<menuNm><![CDATA[멤버십]]></menuNm>
+    						<depth><![CDATA[2]]></depth>
+    						<pageUrl />
+    						<parentMenu><![CDATA[SVC]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[GIT]]></menuCd>
+    						<menuNm><![CDATA[혜택안내]]></menuNm>
+    						<depth><![CDATA[1]]></depth>
+    						<pageUrl />
+    						<parentMenu />
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[GIT_A]]></menuCd>
+    						<menuNm><![CDATA[할인혜택]]></menuNm>
+    						<depth><![CDATA[2]]></depth>
+    						<pageUrl />
+    						<parentMenu><![CDATA[GIT]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[GIT_B]]></menuCd>
+    						<menuNm><![CDATA[부가혜택]]></menuNm>
+    						<depth><![CDATA[2]]></depth>
+    						<pageUrl />
+    						<parentMenu><![CDATA[GIT]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[GIT_C]]></menuCd>
+    						<menuNm><![CDATA[멤버십혜택]]></menuNm>
+    						<depth><![CDATA[2]]></depth>
+    						<pageUrl />
+    						<parentMenu><![CDATA[GIT]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[MEB]]></menuCd>
+    						<menuNm><![CDATA[멤버십]]></menuNm>
+    						<depth><![CDATA[1]]></depth>
+    						<pageUrl />
+    						<parentMenu />
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[MEB_A]]></menuCd>
+    						<menuNm><![CDATA[my멤버십]]></menuNm>
+    						<depth><![CDATA[2]]></depth>
+    						<pageUrl />
+    						<parentMenu><![CDATA[MEB]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[MEB_A_01]]></menuCd>
+    						<menuNm><![CDATA[카드안내]]></menuNm>
+    						<depth><![CDATA[3]]></depth>
+    						<pageUrl />
+    						<parentMenu><![CDATA[MEB_A]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[MEB_A_02]]></menuCd>
+    						<menuNm><![CDATA[사용내역]]></menuNm>
+    						<depth><![CDATA[3]]></depth>
+    						<pageUrl />
+    						<parentMenu><![CDATA[MEB_A]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[MEB_A_03]]></menuCd>
+    						<menuNm><![CDATA[멤버십 혜택]]></menuNm>
+    						<depth><![CDATA[3]]></depth>
+    						<pageUrl />
+    						<parentMenu><![CDATA[MEB_A]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[MEB_B]]></menuCd>
+    						<menuNm><![CDATA[신규/재발급/종류변경]]></menuNm>
+    						<depth><![CDATA[2]]></depth>
+    						<pageUrl />
+    						<parentMenu><![CDATA[MEB]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[MEB_C]]></menuCd>
+    						<menuNm><![CDATA[카드정보수정]]></menuNm>
+    						<depth><![CDATA[2]]></depth>
+    						<pageUrl />
+    						<parentMenu><![CDATA[MEB]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[MEB_D]]></menuCd>
+    						<menuNm><![CDATA[카드 일시정지/해제]]></menuNm>
+    						<depth><![CDATA[2]]></depth>
+    						<pageUrl />
+    						<parentMenu><![CDATA[MEB]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[MEB_E]]></menuCd>
+    						<menuNm><![CDATA[카드배송/발급이력]]></menuNm>
+    						<depth><![CDATA[2]]></depth>
+    						<pageUrl />
+    						<parentMenu><![CDATA[MEB]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[MEB_F]]></menuCd>
+    						<menuNm><![CDATA[레인보우포인트]]></menuNm>
+    						<depth><![CDATA[2]]></depth>
+    						<pageUrl />
+    						<parentMenu><![CDATA[MEB]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[MEB_G]]></menuCd>
+    						<menuNm><![CDATA[내맘대로 T멤버십 설정]]></menuNm>
+    						<depth><![CDATA[2]]></depth>
+    						<pageUrl />
+    						<parentMenu><![CDATA[MEB]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[CONVERT]]></menuCd>
+    						<menuNm><![CDATA[컨버전화면]]></menuNm>
+    						<depth><![CDATA[1]]></depth>
+    						<parentMenu><![CDATA[]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuNm><![CDATA[청구생성결과_1안]]></menuNm>
+    						<menuCd><![CDATA[CONVERT_1]]></menuCd>
+    						<depth><![CDATA[2]]></depth>
+    						<parentMenu><![CDATA[CONVERT]]></parentMenu>
+    						<pageUrl><![CDATA[../conversion/ZINVSROM00020_P01_1016.xml]]></pageUrl>
+    					</w2:row>
+    					<w2:row>
+    						<menuNm><![CDATA[청구생성결과_2안]]></menuNm>
+    						<menuCd><![CDATA[CONVERT_2]]></menuCd>
+    						<depth><![CDATA[2]]></depth>
+    						<parentMenu><![CDATA[CONVERT]]></parentMenu>
+    						<pageUrl><![CDATA[../conversion/ZINVSROM00020_P02_1016.xml]]></pageUrl>
+    					</w2:row>
+    					<w2:row>
+    						<menuCd><![CDATA[CONVERT_3]]></menuCd>
+    						<menuNm><![CDATA[청구생성결과_3안]]></menuNm>
+    						<depth><![CDATA[2]]></depth>
+    						<pageUrl><![CDATA[../conversion/ZINVSROM00020_P03_1016.xml]]></pageUrl>
+    						<parentMenu><![CDATA[CONVERT]]></parentMenu>
+    					</w2:row>
+    					<w2:row>
+    						<menuNm><![CDATA[서비스기술방식별_1안]]></menuNm>
+    						<menuCd><![CDATA[CONVERT_4]]></menuCd>
+    						<depth><![CDATA[2]]></depth>
+    						<parentMenu><![CDATA[CONVERT]]></parentMenu>
+    						<pageUrl><![CDATA[../conversion/ZOSSSCOM15100_P01_1016.xml]]></pageUrl>
+    					</w2:row>
+    					<w2:row>
+    						<menuNm><![CDATA[서비스기술방식별_2안]]></menuNm>
+    						<menuCd><![CDATA[CONVERT_5]]></menuCd>
+    						<depth><![CDATA[2]]></depth>
+    						<parentMenu><![CDATA[CONVERT]]></parentMenu>
+    						<pageUrl><![CDATA[../conversion/ZOSSSCOM15100_P02_1016.xml]]></pageUrl>
+    					</w2:row>
+    					<w2:row>
+    						<menuNm><![CDATA[서비스기술방식별_3안]]></menuNm>
+    						<menuCd><![CDATA[CONVERT_6]]></menuCd>
+    						<depth><![CDATA[2]]></depth>
+    						<parentMenu><![CDATA[CONVERT]]></parentMenu>
+    						<pageUrl><![CDATA[../conversion/ZOSSSCOM15100_P03_1016.xml]]></pageUrl>
+    					</w2:row>
+    				</w2:data>
+    			</w2:dataList>
+    			<w2:dataList baseNode="list" id="dlt_Bookmark" repeatNode="map" saveRemovedData="true">
+    				<w2:columnInfo>
+    					<w2:column dataType="text" id="pageUrl" name="페이지주소"/>
+    					<w2:column dataType="text" id="bookmarkNm" name="페이지명"/>
+    				</w2:columnInfo>
+    			</w2:dataList>
+    			<w2:dataList baseNode="list" id="dlt_BookmarkFd" repeatNode="map" saveRemovedData="true">
+    				<w2:columnInfo>
+    					<w2:column dataType="text" id="foldNm" name="북마크폴더명"/>
+    					<w2:column dataType="text" id="foldCd" name="북마크폴더코드"/>
+    				</w2:columnInfo>
+    			</w2:dataList>
+    		</w2:dataCollection>
+    		<w2:workflowCollection/>
+    	</xf:model>
+    	<script type="javascript"><![CDATA[
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/    	
+    	/**
+         * 메인화면 탭 설정.
+         **/
+        mainTab.setStyle( "width" , "1440px" );
+
+        //고객 탭변경 화면설정.
+        scwin.MainTabChange = function() {
+            if(mainTab.getSelectedTabID() == "tabs1"){
+                mainTab.setStyle( "width" , "1440px" );
+            }else if(mainTab.getSelectedTabID() == "tabs2"){
+                mainTab.setStyle( "width" , "1440px" );
+            }else if(mainTab.getSelectedTabID() == "tabs3"){
+                mainTab.setStyle( "width" , "1440px" );
+            }
+            
+            
+            $(".w2windowContainer_nameLayer_menuItem").css("display","none");
+            scwin.HidefavLink();
+        };
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/        
+        /**
+         * FULL VIEW : Zoom 적용 함수.
+         **/
+         scwin.zoomResolve = function() {
+            var width = window.innerWidth || document.body.clientWidth;
+            var height = window.innerHeight || document.body.clientHeight;
+            var ratio = height / width;
+            var baseRatio = 0.5625;
+            if(ratio > baseRatio) {
+                if(window.wrap) {
+                    wrap.addClass("hideWidget"); 
+                    $("html").css("font-size", 15 - ratio + "px"); 
+                }
+                return {"baseWidth" : 1440, "baseHeight" : 1080};
+            } else {
+                if(window.wrap) {
+                    wrap.removeClass("hideWidget");
+                    $("html").css("font-size", 15 - ratio + "px"); 
+                }
+                return {"baseWidth" : 1920, "baseHeight" : 1080};
+            }
+        };
+
+        if(WebSquare.BootLoader.browserCheck.ieAllVersion) {
+            WebSquare.util.setFullView(scwin.zoomResolve);
+        }
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+        /**
+         * 위젯 컨테이너 정의.
+         **/
+        wgc01.addWidget({  
+            id : "wgc01_Calendar",
+            title : "Calendar",
+            src : "../widget/calendar.xml",
+            scope : true,
+            col : 0
+        });
+
+        wgc01.addWidget({  
+            id : "wgc01_Calculator",
+            title : "Calculator",
+            src : "../widget/calculator.xml",
+            scope : true,
+            col : 0
+        });
+
+        wgc01.addWidget({  
+            id : "wgc01_Specifications",
+            title : "Specifications",
+            src : "../widget/specifications.xml",
+            scope : true,
+            col : 0
+        });
+
+        wgc01.addWidget({  
+            id : "wgc01_Alert",
+            title : "Alert",
+            src : "../widget/alert.xml",
+            scope : true,
+            col : 1
+        });
+
+        wgc01.addWidget({  
+            id : "wgc01_Memo",
+            title : "Memo",
+            src : "../widget/memo.xml",
+            scope : true,
+            col : 1
+        });
+        
+        wgc01.addWidget({  
+            id : "wgc01_Messanger",
+            title : "Messanger",
+            src : "../widget/messanger.xml",
+            scope : true,
+            col : 1
+        });
+        
+        scwin.wgc01_onwidgetmaximize = function(widgetId){
+		    var targetWidget = WebSquare.util.getComponentById(widgetId);      
+		    targetWidget.setUserData("restoreHeight", $("#" + targetWidget.id + " .wraper").height());
+		    $("#" + targetWidget.id + " .wraper").height($("#wgc01").height() - $("#" + targetWidget.id + "_title").height());
+		};
+		
+		scwin.wgc01_onwidgetrestore = function(widgetId){
+		    var targetWidget = WebSquare.util.getComponentById(widgetId); 
+		    $("#" + targetWidget.id + " .wraper").height(targetWidget.getUserData("restoreHeight"));
+		};
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+        /**
+         * 메인화면 메뉴 설정.
+         **/
+
+        //메뉴 SHOW 이벤트 정의.
+        scwin.ManuShow = function() {
+            $("#trv_MenuList").fadeIn(700, function() {
+                $("#naviBody").toggleClass("show");
+                trv_MenuList.setStyle("width", "225px");
+            });
+        };
+
+        //메뉴 선택 이벤트 정의.
+        scwin.MenuSelect = function(value, nodeElement, index) {
+            
+            var openNodeArr = $("#trv_MenuList .w2treeview_node[opened=true]");
+            var openDepth = Number(this.findNodeByIndex(index).depth);
+            
+            for(var i=0; i<openNodeArr.length; i++){
+                var openIndex = $(openNodeArr[i]).attr("index");
+                trv_MenuList.collapseNode( Number(openIndex) );
+            }
+            
+            var matchData = dlt_MenuList.getMatchedJSON( "menuCd" , value , true)[0];
+            var depth = Number(matchData.depth);
+            var childDepth = depth + 1;
+            var parentMenu = matchData.parentMenu;
+            
+            //부모노드 display
+            while(true){
+                var pMatchData  = dlt_MenuList.getMatchedJSON( "menuCd" , parentMenu , true);
+                
+                //부모가 없으면 skip
+                if(pMatchData.length == 0) break;
+                
+                var pDepth      = Number(pMatchData[0].depth);
+                var pChildDepth = pDepth + 1;
+                var pValue      = pMatchData[0].menuCd;
+                parentMenu      = pMatchData[0].parentMenu;
+                
+                trv_MenuList.expandNode( pValue , false );
+                trv_MenuList.setStyle("width", (pChildDepth*225)+"px");
+            }
+            
+            //클릭한 노드 display
+            trv_MenuList.expandNode( value);
+            trv_MenuList.setStyle("width", (childDepth*225)+"px");
+        };
+
+        //메뉴 선택시 선택된 메뉴의 네비게이션을 배열로 가져옵니다.
+        scwin.ShowMenuNavi = function(){
+            var pJsonObj        = arguments[0];
+            var isMenuCd        = false;
+            if(arguments.length > 1){
+                isMenuCd = arguments[0];
+            }
+            
+            var menuCd          = pJsonObj.menuCd;
+            var menuNm          = pJsonObj.menuNm;
+            var depth           = pJsonObj.depth;
+            var parentMenu      = pJsonObj.parentMenu;
+                
+            $w.log(menuCd+","+menuNm+","+depth+","+parentMenu);
+                
+            var naviArr =  new Array();
+            if(isMenuCd){
+                naviArr.push(menuCd);
+            }else{
+                naviArr.push(menuNm);
+            }
+            
+            
+            while(Number(parentMenu) != ""){
+                var parentMatchData = dlt_MenuList.getMatchedJSON( "menuCd" , parentMenu , true);
+                
+                if(isMenuCd){
+                    naviArr.push(parentMatchData[0].menuCd);
+                }else{
+                    naviArr.push(parentMatchData[0].menuNm);
+                }
+                
+                parentMenu = parentMatchData[0].parentMenu;
+            }
+            
+            naviArr = naviArr.reverse();
+            return naviArr;
+        };
+
+        //선택된 메뉴의 페이지를 생성합니다.
+        scwin.MenuPageCreate = function() {
+            if (this.isLeaf()) {
+                scwin.PageCreate(this.getSelectedValue());
+                naviBody.toggleClass("show");
+            }
+        };
+
+        //메뉴 페이지를 MDI화면에 생성합니다. (동적 생성)
+        scwin.PageCreate = function (pMenuCd) {
+            var menuCd          =  pMenuCd;
+            var matchData       = dlt_MenuList.getMatchedJSON( "menuCd" , menuCd , true)[0];
+            var resultArr       = scwin.ShowMenuNavi(matchData, false);
+            
+            if (typeof matchData.pageUrl != "undefined" && matchData.pageUrl != "") {
+                var index = mainTab.getSelectedTabIndex();
+                var content = mainTab.getChildren();
+                var options = {
+                    recursive : true,
+                    excludeId : "",
+                    excludePlugin : "body window iframe group trigger textbox output calendar image span anchor pageInherit wframe itemTable"
+                };
+                
+                var arr = WebSquare.util.getChildren(content[index], options);
+                for (var i = 0; i < arr.length; i++) {
+                    var htmlStr = [];
+                    htmlStr.push("<div id='" + matchData.menuCd + "_" + arr[i].id +"' class='w2group grpheader'>");
+                    htmlStr.push("<div id='" + matchData.menuCd + "_div_" + arr[i].id +"' class='w2group lta'>");
+                    htmlStr.push("<h2 id='" + matchData.menuCd + "_title_" + arr[i].id +"' class='w2textbox '>"+ matchData.menuNm +"</h2>");
+                    htmlStr.push("<ul id='" + matchData.menuCd + "_ul_" + arr[i].id +"' class='w2group clearfix navi'>");
+                    
+                    for (var j = 0; j< resultArr.length; j++) {
+                        var menuNm = dlt_MenuList.getMatchedJSON("menuCd", resultArr[j])[0].menuNm;
+                        htmlStr.push("<li id='" + matchData.menuCd + "_li_"+j+"_" + arr[i].id +"' class='w2group '><span id='wq_uuid_"+ j +"' class='w2span '>" + menuNm +"</span></li>");
+                    }
+                    var menuCd = matchData.menuCd;
+                    htmlStr.push("</ul></div>");
+                    htmlStr.push("<div id='div_" + arr[i].id +"' class='w2group rta mt5'>");
+                    htmlStr.push("<a id='btnRelated" + matchData.menuCd +"' class='w2group rela_link'><span id='"+ arr[i].id + "_wq_uuid_15' class='w2span '>Related Links</span></a>");
+                    htmlStr.push("<ul id='relaBody" + matchData.menuCd +"' class='w2group lst_rela hide'>");
+                    htmlStr.push("<li id='"+ arr[i].id + "_li_01' class='w2group '><a id='"+ arr[i].id + "_a_01' class='w2anchor2 ' href='javascript:void(null);'>인바운드마케팅</a></li>");
+                    htmlStr.push("<li id='"+ arr[i].id + "_li_02' class='w2group '><a id='"+ arr[i].id + "_a_02' class='w2anchor2 ' href='javascript:void(null);'>고객정보현행화</a></li>");
+                    htmlStr.push("<li id='"+ arr[i].id + "_li_03' class='w2group '><a id='"+ arr[i].id + "_a_03' class='w2anchor2 acc' href='javascript:void(null);'>미납대상</a></li>");
+                    htmlStr.push("<li id='"+ arr[i].id + "_li_04' class='w2group '><a id='"+ arr[i].id + "_a_04' class='w2anchor2 acc' href='javascript:void(null);'>콜백</a></li>");
+                    htmlStr.push("<li id='"+ arr[i].id + "_li_05' class='w2group '><a id='"+ arr[i].id + "_a_05' class='w2anchor2 acc' href='javascript:void(null);'>고객약속</a></li>");
+                    htmlStr.push("<li id='"+ arr[i].id + "_li_06' class='w2group '><a id='"+ arr[i].id + "_a_06' class='w2anchor2 acc' href='javascript:void(null);'>자료발송</a></li>");
+                    htmlStr.push("<li id='"+ arr[i].id + "_li_07' class='w2group '><a id='"+ arr[i].id + "_a_07' class='w2anchor2 ' href='javascript:void(null);'>통화내역 SMS인증</a></li>");
+                    htmlStr.push("<li id='"+ arr[i].id + "_li_08' class='w2group '><a id='"+ arr[i].id + "_a_08' class='w2anchor2 ' href='javascript:void(null);'>기변</a></li>");
+                    htmlStr.push("<li id='"+ arr[i].id + "_li_09' class='w2group '><a id='"+ arr[i].id + "_a_09' class='w2anchor2 ' href='javascript:void(null);'>데이터상세</a></li>");
+                    htmlStr.push("<li id='"+ arr[i].id + "_li_10' class='w2group '><a id='"+ arr[i].id + "_a_10' class='w2anchor2 ' href='javascript:void(null);'>QA</a></li>");
+                    htmlStr.push("</ul><a id='"+ arr[i].id + "_a' class='w2anchor2 btn_picture' href='javascript:void(null);'></a>");
+                    htmlStr.push("<div id='"+ arr[i].id + "_div_01' class='w2group mdi_btn_box'><a id='"+ arr[i].id + "_btn_dual' class='w2anchor2 btn_dual' href='javascript:void(null);'></a></div>");
+                    htmlStr.push("<div id='"+ arr[i].id + "_div_02' class='w2group mdi_btn_box'><a id='btn_star' class='w2anchor2 btn_star' href='javascript:void(null);'></a>");
+                    htmlStr.push("<a id='"+ arr[i].id + "_btn_multi' class='w2anchor2 btn_multi' href='javascript:void(null);'></a></div>");
+                    htmlStr.push("<div id='"+ arr[i].id + "_div_03' class='w2group mdi_btn_box'><a id='"+ arr[i].id + "_btn_winmin' class='w2anchor2 btn_winmin' href='javascript:void(null);'></a>");
+                    htmlStr.push("<a id='"+ arr[i].id + "_btn_winmax' class='w2anchor2 btn_winmax' href='javascript:void(null);'></a>");
+                    htmlStr.push("<a id='"+ arr[i].id + "_btn_winclose' class='w2anchor2 btn_winclose' href='javascript:void(null);'></a></div>");
+                    htmlStr.push("<div id='"+ arr[i].id + "_div_04' class='w2group mdi_btn_box'><a id='"+ arr[i].id + "_btn_all' class='w2anchor2 btn_all' href='javascript:void(null);'></a></div>");
+                    htmlStr.push("</div></div>);");
+                    htmlStr = htmlStr.join("");
+                    var isWindow = $w.comp[arr[i].id].getWindow(matchData.menuNm);
+                    if (isWindow == null) {
+                        $w.comp[arr[i].id].createWindow(matchData.menuNm, null, matchData.pageUrl, null , null , "existWindow03" , null , null, htmlStr);
+
+
+                        var menuOpen = false;
+                        $("#btnRelated" +menuCd).hover(
+                            function() {
+                              $("#relaBody"+menuCd).addClass('show');
+                            }, 
+                            function(){
+                                setTimeout(function() {
+                                    if(!menuOpen) {
+                                        menuOpen = false;
+                                        $("#relaBody"+menuCd).removeClass('show');
+                                    }
+                                 } , 300);
+                            }
+                        );
+                        
+                        $("#relaBody" +menuCd).hover(
+                            function(){
+                            menuOpen = true;
+                                //$("#relaBody"+menuCd).addClass('show');
+                            }, 
+                            function() {    
+                                menuOpen = false;
+                                $("#relaBody"+menuCd).removeClass('show');
+                            }
+                        );
+                        
+                        
+                        $(document).on("click", "#"+arr[i].id +"_btn_winclose" , function(){
+                            var winComp = $w.comp[this.id.split("_btn_winclose")[0]];
+                            winComp.closeWindow(winComp.getSelectedWindowId());
+                        });
+                        
+                        $(document).on("click","#btn_star",function(){
+                            var comp = $w.comp[this.parentElement.getAttribute("id").slice(0, 5)];
+                            var windowTitle = comp.getSelectedWindowId();
+                            var jsonObj = dlt_MenuList.getMatchedJSON("menuNm", windowTitle)[0];
+                            var json = [{
+                                pageUrl : jsonObj.pageUrl,
+                                bookmarkNm : jsonObj.menuNm
+                            }];
+                            
+                            var isDoual = dlt_Bookmark.getMatchedData("bookmarkNm", jsonObj.menuNm, true); 
+                            if (isDoual.length < 1) {
+                                dlt_Bookmark.setJSON(json, true);
+                            } 
+                        });
+                    } else {
+                        $w.comp[arr[i].id].selectWindow(matchData.menuNm);
+                    }
+                }
+                
+            }
+        };
+        
+        $("#trv_MenuList").hover(
+            function(){
+            }, 
+            function() {    
+                $("#naviBody").fadeOut(400, function() {$("#naviBody").removeClass("show");});
+            }
+        );
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+		/**
+         * 북마크 (화면즐겨찾기) 기능 정의.
+         **/
+
+		//북마크 창 열기.
+		scwin.ShowFavLink = function() {
+			btn_favDiv.addClass("show");
+			btn_favDiv.removeClass("hide");
+		};
+		
+        //북마크 창 닫기.
+		scwin.HidefavLink = function() {
+			btn_favDiv.addClass("hide");
+			btn_favDiv.removeClass("show");
+		};
+
+        //북마크 선택 화면페이지 생성.
+        scwin.FavPageOpens = function() {
+            var pageArr = chk_fav.getValue().split(" ");
+            for (var i = 0; i < pageArr.length; i++) {
+                var rowIndex = dlt_MenuList.getMatchedIndex("pageUrl", pageArr[i])[0];
+                var menuCd = dlt_MenuList.getCellData(rowIndex, "menuCd");
+                scwin.PageCreate(menuCd);  
+            }
+        };
+		
+        //북마크에 설정된 화면페이지 모두선택|해제
+        scwin.SelectAllFavLink = function(info) {
+            chk_fav.checkAll(info.checked);
+        };
+
+        //북마크 화면페이지 설정.(가져오기 테스트)
+        scwin.SetFavLink = function() {
+            var jsonData = [{bookmarkNm: "고객상담", pageUrl: "sample_01.xml"},
+                            {bookmarkNm: "신규가입", pageUrl: "sample_03.xml"},
+                            {bookmarkNm: "요금제 추천", pageUrl: "sample_04.xml"},
+                            {bookmarkNm: "개통결과", pageUrl: "sample_05.xml"}];
+            dlt_Bookmark.setJSON(jsonData);
+        };
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+        
+        /**
+         * 기타 버튼 동작 함수.
+         **/
+
+		scwin.closeNotice_onclick = function() {
+			this.parentControl.remove();
+		};
+				
+		scwin.toggleFnc = function(menuCd) {
+			$("#relaBody"+menuCd).toggleClass('show');
+		};
+		
+        //화면 컨테이너 링크 설정 메뉴 셋팅.
+        scwin.setMenu = function(id, dataArr) {
+              $w.comp[id].setMenu(dataArr, dataArr.length * 35);
+        };
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+		
+]]></script>
+    </head>
+    <body>
+    	<xf:group class="" id="wrap" style="">
+    		<xf:group class="" id="header" style="">
+    			<xf:group adaptiveThreshold="" class="nav_wrap" id="" style="">
+    				<xf:group class="nav_tit" id="" style="" tagname="">
+    					<xf:group class="" id="" style="" tagname="h1" />
+    					<w2:anchor class="btn_nav" ev:onclick="scwin.ManuShow" id="btn_Menu" outerDiv="false" style="">
+    						<xf:label />
+    					</w2:anchor>
+    				</xf:group>
+    			</xf:group>
+    			<xf:group adaptive="" class="fav_wrap" id="" style="">
+    				<xf:group class="fav_mask" id="" style="">
+    					<w2:anchor class="fav_link on" ev:onclick="scwin.ShowFavLink" id="btn_FavLikn" outerDiv="false" style="">
+    						<xf:label />
+    					</w2:anchor>
+    					<w2:anchor class="fav_link" id="" outerDiv="false" style="">
+    						<xf:label />
+    					</w2:anchor>
+    					<w2:anchor class="fav_link" id="" outerDiv="false" style="">
+    						<xf:label />
+    					</w2:anchor>
+    				</xf:group>
+    			</xf:group>
+    			<xf:group class="glb_wrap" id="" style="">
+    				<w2:anchor class="btn_user" id="" outerDiv="false" style="">
+    					<xf:label />
+    				</w2:anchor>
+    				<xf:group class="src_box" id="" style="">
+    					<xf:input id="" style="" />
+    					<w2:anchor id="" outerDiv="false" style="">
+    						<xf:label />
+    					</w2:anchor>
+    				</xf:group>
+    				<xf:group class="" id="" style="" tagname="ul">
+    					<xf:group class="" id="" style="" tagname="li">
+    						<xf:group adaptive="" class="btn_alert" id="" style="" tagname="a">
+    							<w2:span class="cnt" id="" label="6" style="" />
+    						</xf:group>
+    					</xf:group>
+    					<xf:group class="" id="" style="" tagname="li">
+    						<w2:anchor class="btn_panel" id="" outerDiv="false" style="">
+    							<xf:label />
+    						</w2:anchor>
+    					</xf:group>
+    					<xf:group class="" id="" style="" tagname="li">
+    						<w2:anchor class="btn_zoom" ev:onclick="" id="btn_Zoom" outerDiv="false" style="">
+    							<xf:label />
+    						</w2:anchor>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    			<xf:group class="win_panel" id="" style="">
+    				<w2:anchor class="min" id="" outerDiv="false" style="">
+    					<xf:label />
+    				</w2:anchor>
+    				<w2:anchor class="max" id="" outerDiv="false" style="">
+    					<xf:label />
+    				</w2:anchor>
+    				<w2:anchor class="close" id="" outerDiv="false" style="">
+    					<xf:label />
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group class="nav_cont hide" id="naviBody" style="">
+    			<w2:treeview checkAllChildNodes="false" checkboxDisabledFalseValue="" class="m_tree" dataType="listed" dynamicAppend=""
+    				ev:onclick="scwin.MenuPageCreate" ev:onlabelclick="scwin.MenuSelect" id="trv_MenuList" lineShow="false" showTreeDepth="0" style=""
+    				toggleEvent="onclick" tooltipDisplay="true" tooltipGroupClass="false" useDrag="">
+    				<w2:itemset nodeset="data:dlt_MenuList">
+    					<w2:label ref="menuNm" />
+    					<w2:value ref="menuCd" />
+    					<w2:depth ref="depth" />
+    					<w2:folder ref="" />
+    					<w2:checkbox ref="" />
+    					<w2:checkboxDisabled ref="" />
+    					<w2:image ref="" />
+    					<w2:iconImage ref="" />
+    					<w2:selectedImage ref="" />
+    					<w2:expandedImage ref="" />
+    					<w2:leafImage ref="" />
+    				</w2:itemset>
+    			</w2:treeview>
+    		</xf:group>
+    		<xf:group class="fav_cont hide" id="btn_favDiv" style="">
+    			<xf:group class="fav_tit" id="" style="">
+    				<xf:select appearance="full" cols="" id="chk_BookmarkFd" rows="" selectedindex="-1" style="">
+    					<xf:choices>
+    						<xf:item>
+    							<xf:label><![CDATA[고객상담 그룹]]></xf:label>
+    							<xf:value />
+    						</xf:item>
+    					</xf:choices>
+    				</xf:select>
+    				<w2:anchor class="" ev:onclick="scwin.HidefavLink" id="btn_FavClose" outerDiv="false" style="">
+    					<xf:label />
+    				</w2:anchor>
+    			</xf:group>
+    			<xf:group class="fav_body" id="" style="">
+    				<xf:group class="all_box" id="" style="">
+    					<xf:select appearance="full" cols="" ev:onviewchange="scwin.SelectAllFavLink" id="chk_favAllSelect" rows=""
+    						selectedindex="-1" style="">
+    						<xf:choices>
+    							<xf:item>
+    								<xf:label />
+    								<xf:value />
+    							</xf:item>
+    						</xf:choices>
+    					</xf:select>
+    					<w2:anchor class="btn_fav_all" ev:onclick="scwin.FavPageOpens" id="btn_FavOpen" outerDiv="false" style="">
+    						<xf:label><![CDATA[선택화면열기]]></xf:label>
+    					</w2:anchor>
+    				</xf:group>
+    				<xf:group class="chk_box" id="" style="">
+    					<xf:select appearance="full" cols="1" id="chk_fav" rows="" selectedindex="-1" style="">
+    						<xf:choices>
+    							<xf:itemset nodeset="data:dlt_Bookmark">
+    								<xf:label ref="bookmarkNm" />
+    								<xf:value ref="pageUrl" />
+    							</xf:itemset>
+    						</xf:choices>
+    					</xf:select>
+    				</xf:group>
+    			</xf:group>
+    			<xf:group class="op_grp" id="" style="">
+    				<xf:group class="op_box" id="" style="">
+    					<xf:group class="btn_fav_del mr5" id="" style="" tagname="a">
+    						<w2:span id="" label="삭제" style="" />
+    					</xf:group>
+    					<xf:group class="btn_fav_add" id="" style="" tagname="a">
+    						<w2:span id="" label="추가" style="" />
+    					</xf:group>
+    				</xf:group>
+    				<xf:group class="op_box" id="" style="">
+    					<w2:anchor class="btn_fav_in disable mr5" ev:onclick="scwin.SetFavLink" id="btn_GiveFavMenu" outerDiv="false"
+    						style="">
+    						<xf:label><![CDATA[가져오기]]></xf:label>
+    					</w2:anchor>
+    					<w2:anchor class="btn_fav_out disable" id="" outerDiv="false" style="">
+    						<xf:label><![CDATA[내보내기]]></xf:label>
+    					</w2:anchor>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group class="" id="container" style="">
+    			<w2:tabControl alwaysDraw="false" class="m_tab" confirmFalseAction="new" confirmTrueAction="exist"
+    				ev:onchange="scwin.MainTabChange" focusOnStart="" id="mainTab" style="" tabScroll="" useConfirmMessage="false" useDrag="true"
+    				useTabKeyOnly="true">
+    				<w2:tabs disabled="false" id="tabs1" label="방정환 고객님" style="height:50px;" />
+    				<w2:tabs disabled="false" id="tabs2" label="이순신 고객님" style="height:50px;" />
+    				<w2:tabs disabled="false" id="tabs3" label="홍길동 고객님" style="height:50px;" />
+    				<w2:tabs disabled="true" id="tabs4" label="Ctrl + 4" style="height:50px;" />
+    				<w2:tabs disabled="true" id="tabs5" label="Ctrl + 5" style="height:50px;" />
+    				<w2:content alwaysDraw="false" frameMode="" id="content1" src="mdi_01.xml" style="" />
+    				<w2:content alwaysDraw="false" id="content2" src="mdi_02.xml" style="" />
+    				<w2:content alwaysDraw="false" frameMode="" id="content3" name="" src="mdi_03.xml" style="" />
+    				<w2:content alwaysDraw="false" id="content4" style="" />
+    				<w2:content alwaysDraw="false" id="content5" style="" />
+    			</w2:tabControl>
+    			<xf:group class="" id="widget" style="">
+    				<w2:widgetContainer class="wg_wrap" cols="2" id="wgc01" style="height:100%;" widgetMove="true"
+    					ev:onwidgetmaximize="scwin.wgc01_onwidgetmaximize" ev:onwidgetrestore="scwin.wgc01_onwidgetrestore" />
+    			</xf:group>
+    		</xf:group>
+    		<xf:group class="" id="footer" style="">
+    			<xf:group class="fot_wrap" id="" style="">
+    				<xf:group class="btn_grp" id="" style="">
+    					<w2:anchor class="ico_user" id="" outerDiv="false" style="">
+    						<xf:label><![CDATA[접촉이력]]></xf:label>
+    					</w2:anchor>
+    					<w2:anchor class="ico_sent" id="" outerDiv="false" style="">
+    						<xf:label><![CDATA[승인요청]]></xf:label>
+    					</w2:anchor>
+    					<w2:anchor class="ico_lock" id="" outerDiv="false" style="">
+    						<xf:label><![CDATA[고객인증]]></xf:label>
+    					</w2:anchor>
+    					<w2:anchor class="ico_comment" clickEventElement="" id="" outerDiv="false" style="">
+    						<xf:label><![CDATA[상담등록]]></xf:label>
+    					</w2:anchor>
+    					<w2:anchor class="ico_menu" id="" outerDiv="false" style="">
+    						<xf:label><![CDATA[최근번호]]></xf:label>
+    					</w2:anchor>
+    					<w2:anchor class="ico_iphone" id="" outerDiv="false" style="">
+    						<xf:label><![CDATA[SMS]]></xf:label>
+    					</w2:anchor>
+    					<w2:anchor class="ico_friends" id="" outerDiv="false" style="">
+    						<xf:label><![CDATA[CE응대]]></xf:label>
+    					</w2:anchor>
+    					<w2:anchor class="ico_newpaper" id="" outerDiv="false" style="">
+    						<xf:label><![CDATA[승인목록]]></xf:label>
+    					</w2:anchor>
+    					<w2:anchor class="ico_screen" id="" outerDiv="false" style="">
+    						<xf:label><![CDATA[배치조회]]></xf:label>
+    					</w2:anchor>
+    					<w2:anchor class="ico_inbox" id="" outerDiv="false" style="">
+    						<xf:label><![CDATA[수신함]]></xf:label>
+    					</w2:anchor>
+    					<w2:anchor class="ico_computer" id="" outerDiv="false" style="">
+    						<xf:label><![CDATA[추천요금제]]></xf:label>
+    					</w2:anchor>
+    					<w2:anchor class="ico_mail" id="" outerDiv="false" style="">
+    						<xf:label><![CDATA[수신함]]></xf:label>
+    					</w2:anchor>
+    					<w2:anchor class="ico_briefcase" id="" outerDiv="false" style="">
+    						<xf:label><![CDATA[영업장]]></xf:label>
+    					</w2:anchor>
+    					<w2:anchor class="ico_plus" id="" outerDiv="false" style="">
+    						<xf:label><![CDATA[추가하기]]></xf:label>
+    					</w2:anchor>
+    				</xf:group>
+    				<xf:group class="tray_wrap" id="" style="">
+    					<xf:group class="tray_gr" id="" style="">
+    						<w2:anchor class="ico_view" id="" outerDiv="false" style="">
+    							<xf:label />
+    						</w2:anchor>
+    						<w2:anchor class="ico_setting" id="" outerDiv="false" style="">
+    							<xf:label />
+    						</w2:anchor>
+    						<w2:anchor class="ico_help" id="" outerDiv="false" style="">
+    							<xf:label />
+    						</w2:anchor>
+    					</xf:group>
+    					<xf:group class="tray_gr02" id="" style="">
+    						<xf:group class="photo" id="" style="" />
+    						<w2:span class="txt_user" id="" label="SK Telecom&lt;br/&gt;신현호" style="" />
+    					</xf:group>
+    					<xf:group class="tray_gr03" id="" style="">
+    						<w2:span class="txt_date" id="" label="오후 3:14&lt;br/&gt;2015-02-26" style="" />
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group class="grpmsg" id="" style="position:absolute;top:100px;left:394px;">
+    			<xf:group class="msg_pop01 hide" id="" style="">
+    				<w2:textbox class="tit_msg" id="" label="&lt;a href=&quot;#none&quot;&gt;김재훈 고객님&lt;/a&gt;은 착한기변 대상이 아닙니다." style="" />
+    				<w2:textbox class="txt_msg" id="" label="다른 프로보션을 확인 해 주세요." style="" />
+    				<w2:anchor class="dinb mt10" id="" outerDiv="false" style="">
+    					<xf:label><![CDATA[다른 프로모션 보기]]></xf:label>
+    				</w2:anchor>
+    				<w2:anchor class="msgclose" ev:onclick="scwin.closeNotice_onclick" id="" outerDiv="false" style="">
+    					<xf:label />
+    				</w2:anchor>
+    			</xf:group>
+    			<xf:group class="msg_pop02 mt10 hide" id="" style="">
+    				<w2:textbox class="tit_msg" id=""
+    					label="&lt;span class=&quot;acc&quot;&gt;필수입력값(강조텍스트)&lt;/span&gt;이 채워지지 않았습니다.&lt;br/&gt;필수입력값 다시 한 번 확인 해 주세요." style="">
+    				</w2:textbox>
+    				<w2:anchor class="msgclose" ev:onclick="scwin.closeNotice_onclick" id="" outerDiv="false" style="">
+    					<xf:label />
+    				</w2:anchor>
+    			</xf:group>
+    			<xf:group class="msg_pop03 mt10 hide" id="" style="">
+    				<w2:textbox class="tit_msg" id=""
+    					label="개통 전 &lt;a href=&quot;#none&quot;&gt;인적사항&lt;/a&gt;을 다시 한 번 확인하세요. &lt;br/&gt;다음의 항목으로 클릭시 이동이 될 것 입니다.&lt;br/&gt;메시지 팝업의 예제문구입니다."
+    					style="">
+    				</w2:textbox>
+    				<w2:anchor class="msgclose" ev:onclick="scwin.closeNotice_onclick" id="" outerDiv="false" style="">
+    					<xf:label />
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+    	</xf:group>
+    	<w2:autoComplete visibleRowNum="5" id="" style="position: absolute;width: 148px;height: 21px;left:110px;top:910px;" search="start" interactionMode=""
+    		displayMode="label" useKeywordHighlight="false" submenuSize="auto" editType="select">
+    	</w2:autoComplete>
+    </body>
+</html>

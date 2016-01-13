@@ -2,32 +2,55 @@
 <html lang="ko">
  <head>
 	 <meta charset="UTF-8">
-	 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
 	 <title>WEBSQUARE HYBRID</title>
 	 <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+	 <script type="text/javascript" charset="utf-8" src="mfilechooser.js"></script>
+	 <script type="text/javascript" charset="utf-8" src="barcode.js"></script>
+	 <script type="text/javascript" charset="utf-8" src="sig.js"></script>
+	 
 	 <script type="text/javascript">
-	 function MFileChooser() { 
-	 } 
-	 MFileChooser.prototype.open = function(win, fail) {
-	 	return cordova.exec(win, fail, "MFileChooser", "open", []); 
-	 };
-	 cordova.addConstructor(function() { 
-	 	if (!window.plugins) {
-	 		window.plugins = {};
-	 	}
-	 	if (!window.plugins.mfilechooser) {
-	 		window.plugins.mfilechooser = new MFileChooser();
-	 	}
-	 });
+	 
 	 function onDeviceReady() {
-	 	window.plugins.mfilechooser.open(win, fail);
+	 	//window.plugins.mfilechooser.open(win, fail,[]);
+	 	//window.plugins.barcodescanner.scan(win, fail,[]);
+	 	window.plugins.signature.open(win, fail,[]);
 	 }
 	 function win(str) {
 	 	console.log(str);
+	 	//uploadPhoto(str);
 	 }
 	 function fail(str) {
 	 	console.log(str);
 	 }
+	 function uploadPhoto(imageURI) {
+        	console.log(imageURI);
+            var options = new FileUploadOptions();
+            options.fileKey="file";
+            options.fileName=imageURI.substr(imageURI.lastIndexOf('/')+1);
+            options.mimeType="image/jpeg";
+ 
+            var params = new Object();
+            params.value1 = "test";
+            params.value2 = "param";
+ 
+            options.params = params;
+            options.chunkedMode = false;
+ 
+            var ft = new FileTransfer();
+            ft.upload(imageURI, "http://swing.websquare.co.kr/uploadFile", win2, fail2, options);
+        }
+ 
+        function win2(r) {
+            console.log("Code = " + r.responseCode);
+            console.log("Response = " + r.response);
+            console.log("Sent = " + r.bytesSent);
+            alert(r.response);
+        }
+ 
+        function fail2(error) {
+            alert("An error has occurred: Code = " + error.code);
+        }
 	 document.addEventListener("deviceready",onDeviceReady,false);	
 	 </script>
  </head>

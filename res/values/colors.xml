@@ -1,10 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="redcolor">#FF0000</color>
-    <color name="graycolor">#aaaaaa</color>
-    <color name="stat_font_color">#9c917a</color>
-    <color name="main_background">#171717</color>
-    <color name="green">#8FCC85</color>
-    <color name="blue">#ff33b5e5</color>
-    <color name="transparentgray">#60aaaaaa</color>
+   <color name="white">#FFFFFF</color>
+	<color name="offWhite">#DDDDDD</color>
+	<color name="black">#000000</color>
+	<color name="darkGray">#333333</color>
+	<color name="lightGray">#777777</color>
+	<color name="brightRed">#FF0000</color>
+	<color name="brightGreen">#00FF00</color>
+	<color name="brightBlue">#0000FF</color>
+	<color name="darkBlue">#880000FF</color>
+	<color name="transparent">#000000FF</color>
+	<color name="transGray">#cc444444</color>
+	
+	<color name="window_background">#ececec</color>
+    <color name="button_pressed">#7f000000</color>
+    <color name="artwork_grid_background">#f8f8f5</color>
+    <color name="artwork_grid_border">#cacaca</color>
+    <color name="search_background">#5489a2</color>
+    <color name="search_hint_color">#92afbc</color>
+    <color name="bg_btn_overlay">#7f000000</color>
+    <color name="bg_dialog_content">#f4f4f4</color>
+    <color name="bg_dialog_artwork_detail">#f4f4f4</color>
+    <color name="bg_editable_artwork">#7f000000</color>
+    <color name="bg_clickable_artwork">#7f000000</color>
+    <color name="bg_artwork_play_progress_bar">#00698c</color>
+    <color name="artwork_play_progress_bar">#0ac8ff</color>
+    <color name="artwork_play_background">#3fbdc9</color>
+    <color name="dialog_divider">#00698c</color>
+    <color name="bg_btn_ab_pressed">#00A3D9</color>
+    <color name="edit_text_hint">#6a6a6a</color>
+    <color name="setting_title_background">#F4F4F4</color>
+    <color name="search_keyword_highlighting">#0085B2</color>
+    <color name="overflow_highlight">#f75473</color>
+    <color name="signature_border">#acacac</color>
+    <color name="signature_box">#ffffffff</color>
+    <color name="actionbar_dropdown_background">#5489a2</color>
+    <color name="button_text_enable">#ffffff</color>
+    <color name="button_text_disable">#75a3b9</color>
+    <color name="artwork_detail_no_comment_background">#000000</color>
+    <color name="dialog_background">#f4f4f4</color>
+    <color name="list_pressed">#77c5e1</color>
+    <color name="activity_dialog_background_color">#CC000000</color>
+
+    <!-- TODO : temp value, doesn't exist in GUI -->
+    <color name="setting_category_background">#dddddd</color>
+    <color name="setting_infomation_background">#cccccc</color>
+    <color name="line">#ffbcbcbc</color>
+    <color name="popup_titlebackground">#00A3D9</color>
+    <color name="popup_background">#004C66</color>
+    <color name="popup_divider_background">#00698C</color>
+    <color name="previous_exhibits_list_item_shadow">#1a000000</color>
 </resources>

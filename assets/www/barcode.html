@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+	 <meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+	 <title>WEBSQUARE HYBRID</title>
+	 <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+	 <script type="text/javascript" charset="utf-8" src="barcode.js"></script>
+	 
+	 <script type="text/javascript">
+	
+	 function onDeviceReady() {
+	 	//window.plugins.barcodescanner.scan(successCallback, errorCallback,[]);
+	 	window.plugins.mfilechooser.open(successCallback, errorCallback,[]);
+	 	
+	 }
+	 function successCallback(result) {
+	 	alert("barcode result\n" +
+                "Result: " + result.text + "\n" +
+                "Format: " + result.format + "\n" +
+                "Cancelled: " + result.cancelled);
+	 }
+	 function errorCallback(error) {
+	 	alert("Scanning failed: " + error);
+	 }
+	 document.addEventListener("deviceready",onDeviceReady,false);	
+	 </script>
+ </head>
+ <body>
+	
+</body>
+</html>

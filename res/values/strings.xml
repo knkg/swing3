@@ -8,4 +8,12 @@
     <string name="category">Category</string>
     <string name="internal">Internal</string>
     <string name="external">External</string>
+    <string name="media_dialog">Media preview</string>
+    <string name="dir_info">Folder Information</string>
+    <string name="manager_act">Phone Management</string>
+    
+    <!-- signature -->
+    <string name="signature_phrase">Tap below to create your mark.</string>
+    <string name="signature_clear">Clear Mark</string>
+    
 </resources>

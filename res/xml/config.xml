@@ -60,7 +60,15 @@
         <param name="onload" value="true" />
     </feature>
     <feature name="MFileChooser">
-        <param name="android-package" value="websquare.hybrid.android.mfilechooser.MFileChooser" />
+        <param name="android-package" value="websquare.hybrid.android.manager.MFileChooser" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Signature">
+        <param name="android-package" value="websquare.hybrid.android.signature.Signature" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="BarcodeScanner">
+        <param name="android-package" value="websquare.hybrid.android.barcodescanner.BarcodeScanner" />
         <param name="onload" value="true" />
     </feature>
     <name>Template</name>

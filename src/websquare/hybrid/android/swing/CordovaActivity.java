@@ -25,15 +25,15 @@ public class CordovaActivity extends Activity implements CordovaInterface {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		/*setContentView(R.layout.cordova_layout);
+		setContentView(R.layout.cordova_layout);
 		cordova_webview = (CordovaWebView) findViewById(R.id.cordova_web_view);
 		// Config.init(this);
 		String url = "file:///android_asset/www/index.html";
-		cordova_webview.loadUrl(url, 5000);*/
-		setContentView(R.layout.cordova_layout);
+		cordova_webview.loadUrl(url, 5000);
+		/*setContentView(R.layout.cordova_layout);
 		cordova_webview = (CordovaWebView) findViewById(R.id.cordova_web_view);
         Config.init(this);
-        cordova_webview.loadUrl(Config.getStartUrl());
+        cordova_webview.loadUrl(Config.getStartUrl());*/
 
 	}
 

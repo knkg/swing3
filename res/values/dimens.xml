@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- Signature -->
+    <dimen name="signature_image_divider">2dp</dimen>
+    <dimen name="signature_margin">12dp</dimen>
+    <dimen name="signature_phrase_margin">15dp</dimen>
+    <dimen name="signature_height">135dp</dimen>
+    <dimen name="signature_anotation_margin">18dp</dimen>
+    <dimen name="signature_btn_padding">59dp</dimen>
+   
+</resources>
